@@ -1,0 +1,110 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$black: #444
+$light-grey: #eee
+$grey: #a4a7a9
+$button: #25282a
+
+body, a
+	color: $black
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+
+body
+	width: 80%
+	margin: 0 auto
+
+a
+	text-decoration: none
+
+nav
+	display: flex
+	justify-content: space-between
+	padding: 0 2em
+	align-items: center
+	#nav-logo 
+		h1
+			margin: 1em 0
+	.nav-icons
+		list-style: none
+		a
+			display: flex
+			align-items: center
+		img
+			width: 1.75em
+			height: 1.75em
+			border-right: 1px solid #eee
+			padding-right: .5em
+		span
+			padding-left: .5em
+			font-size: 1.5em
+
+.banner
+	display: flex
+	align-items: center
+	flex-direction: column
+	height: 175px
+	background-color: $light-grey
+	box-sizing: border-box
+	justify-content: center
+	h1
+		margin-bottom: 0
+		font-weight: normal
+
+.menu-items
+	margin: 2em 0
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	.item
+		display: flex
+		box-sizing: border-box
+		// padding: 1em
+		flex-direction: column
+		width: 31%
+		// height: 250px
+		margin: 0 0 3em 0
+		// background-color: pink
+		img
+			max-width: 100%
+			height: auto
+		h4
+			margin-bottom: 5px
+		span
+			font-size: .85em
+			color: $grey
+		.bottom
+			display: flex
+			align-items: center
+			margin-top: 2em
+			justify-content: space-between
+			span
+				font-size: 1.5em
+				color: $button
+			button
+				border-color: $button
+				padding: 1em
+				background-color: white
+				font-family: "Oswald",sans-serif
+				font-weight: 400
+				text-transform: uppercase
+				font-size: .75em
+				letter-spacing: -.5px
+
+@media screen and (max-width: 417px)
+	body
+		width: 100%
+		h1
+			font-size: 1.25em
+		nav
+			.nav-icons
+				img, span
+					font-size: 1em
+		
+		.menu-items
+			padding: 0 1em
+			.item
+				width: 45%
+			button
+				padding: 5px
