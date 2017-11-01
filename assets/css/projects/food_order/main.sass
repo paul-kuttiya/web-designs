@@ -8,6 +8,7 @@ $grey: #a4a7a9
 $button: #25282a
 
 @import './projects/food_order/modal'
+@import './projects/food_order/checkout'
 
 .show
 	display: block
@@ -53,7 +54,7 @@ nav
 				background-color: $button
 				border-radius: 50%
 				top: -5px
-				right: 15%
+				right: 20%
 			img
 				margin-top: 5px
 				width: 1.75em
@@ -150,23 +151,6 @@ nav
 				font-size: 1.5em
 				color: $button
 				
-/* Add Animation */
-@-webkit-keyframes animate-left
-	from
-		right: -300px
-		opacity: 0
-	to
-		right: 0 
-		opacity: 1
-
-@keyframes animate-left
-	from
-		right: -300px 
-		opacity: 0
-	to
-		right: 0 
-		opacity: 1
-
 
 @media screen and (max-width: 417px)
 	body
